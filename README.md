@@ -3,9 +3,13 @@ Today I Learned
 
 ## Categories
 - [JavaScript](#javascript)
+- [Python](#python)
  
 ## JavaScript
 - [Return Object Literal from Constructor](javascript/return-object-literal-from-constructor.md)
+
+## Python
+- [Clear Cached Files After Heavy Refactoring](python/clear-cached-files-after-heavy-refactoring.md)
 
 ## License
 &copy; 2016 Taylor McGann
