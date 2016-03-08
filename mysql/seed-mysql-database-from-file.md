@@ -1,13 +1,13 @@
 To run seed a mysql database from the CLI:
 
 ```bash
-mysql -p -u <username> <database> < <filename>
+mysql -p -u $USERNAME $DATABASE < $FILENAME
 ```
 
 To dump the database into a sql script:
 
 ```bash
-mysqldump -p -u <username> <database> > <filename>
+mysqldump -p -u $USERNAME $DATABASE > $FILENAME
 ```
 
 For example:
