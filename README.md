@@ -3,11 +3,15 @@ Today I Learned
 
 ## Categories
 - [JavaScript](#javascript)
+- [MySql](#MySQL)
 - [Node](#node)
 - [Python](#python)
  
 ## JavaScript
 - [Return Object Literal from Constructor](javascript/return-object-literal-from-constructor.md)
+
+## MySQL
+- [Seed/Dump MySQL Database from/to File](mysql/seed-mysql-database-from-file.md)
 
 ## Node
 - [List Global NPM Packages](node/list-global-npm-packages.md)
