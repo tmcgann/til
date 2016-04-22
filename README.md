@@ -15,6 +15,7 @@ Today I Learned
 
 ## Node
 - [List Global NPM Packages](node/list-global-npm-packages.md)
+- [Kill Node Serve](node/kill-node-server.md)
 
 ## Python
 - [Clear Cached Files After Heavy Refactoring](python/clear-cached-files-after-heavy-refactoring.md)
