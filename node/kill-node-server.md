@@ -2,7 +2,7 @@ Sometimes while working with Node (e.g. Gulp) I'll get into a bind where a serve
 
 Sometimes when working with Node, I run into the scenario where I need to kill a server or process that is occupying a port I want to use (e.g. maybe a previous instance crashed and I thought I terminated it but nope, it's still running).
 
-To lookup the process, I've found that `ps -ax | grep node` isn't always the most effective. I've come to prefer `lsof -i tcp:<port>`. This command yields output like this:
+There are a number of was to approach this problem. One of the most common is to use `ps` to look up the process ID and `kill` to kill the process. In this case I could use something like `ps -ax | grep node` to look up my Node process. I've found that this isn't always the most effective for my particular scenario and have come to prefer `lsof -i tcp:<port>`. This command yields output like this:
 
 ```bash
 $ lsof -i tcp:9000
@@ -10,13 +10,13 @@ COMMAND   PID   USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 node    85288 taylor   19u  IPv6 0x51cbdafd526a28ef      0t0  TCP *:cslistener (LISTEN)
 ```
 
-Then it's always good to send a `SIGTERM` before a `SIGKILL` to give the process a chance to clean up after itself:
+Then to kill the identified process, it's always good to send a `SIGTERM` before a `SIGKILL` to give the process a chance to clean up after itself:
 
 ```bash
 $ kill -15 85288
 ```
 
-Nothing?
+That didn't seem to do much.
 
 ```bash
 $ kill -9 85288
