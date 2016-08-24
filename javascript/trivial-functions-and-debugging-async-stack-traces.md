@@ -46,18 +46,18 @@ b.fetch(data)
 
 That's it. All that does is add another place in the stack trace where a function is called from Module A (i.e. your module) so that when Module C's (i.e. a third party lib or separate file) function fails, you know what file to look in for potential problems.
 
-Is it uglier? Yes.
+_Is it uglier?_ Yes.
 
-Is it less succinct? Yes.
+_Is it less succinct?_ Yes.
 
-Does it feel redundant? Yes.
+_Does it feel redundant?_ Yes.
 
-Will it affect performance *gasp*? Maybe. Will that matter? Do I dare say...probably not? Depends on your scenario.
+_Will it affect performance *gasp*? Maybe. Will that matter?_ Do I dare say...probably not? Depends on your scenario.
 
-Has this helped me have async stack traces that are oodles more helpful? Yes, yes, a thousand times yes!
+_Has this helped me have async stack traces that are oodles more helpful?_ Yes, yes, a thousand times yes!
 
-Are there significant problems or gotchas with this? Not that I know of.
+_Are there significant problems or gotchas with this?_ Not that I know of.
 
-Can it be improved further? Perhaps. If you don't like anonymous functions, you could used a named function declaration (e.g. function doFilterAndSortItems() {...}).
+_Can it be improved further?_ Perhaps. If you don't like anonymous functions and/or find them hard to read, you could use a named function declaration (e.g. `function doFilterAndSortItems(response) {...}`).
 
-Are there other ways to avoid this problem of "hard to read stack traces"? Probably are. In fact there may be something else I'm missing that might help and be a better solution! Let me know in the comments *pretty* please!
+_Are there other ways to avoid this problem of "hard to read stack traces"?_ Probably. In fact there may be something else I'm missing that might help AND be a better solution! Let me know in the comments *pretty* please!
