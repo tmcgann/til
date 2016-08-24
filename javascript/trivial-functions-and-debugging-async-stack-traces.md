@@ -27,22 +27,24 @@ b.fetch(data)
 
 Now let's say that `c.filterAndSortItems` throws an error: `Cannot read property 'name' of undefined`. Well, assuming `filterAndSortItems` is a single, pure function, that error will be caught or thrown by Module B since Module B's `then` is the caller of Module C's `filterAndSortItems`. And this is where it gets tricky and interesting.
 
-At this point your call stack is asynchronous Module B's `fetch` function makes an asynchronous web request. So chances are your browser dev tools will pick up the stack trace where the response is received and if you have other libraries wrapping your code, it can be very difficult to see what module/file called `b.fetch` in the first place. 
+At this point, your call stack is probably broken up in your dev tools because, as mentioned above, Module B's `fetch` function makes an asynchronous web request and the stack dev tools will probably pick up the stack trace where the response is received and if you have other libraries wrapping your code, it can be very difficult to see what module/file called `b.fetch` in the first place. Not frustrating at all. 
 
 Furthermore, Module B's `then` function is a black box. You may know _what_ it does, that's why you're using it, but you may NOT know _how_ it does what it does. It may be calling _dozens_ of other methods internally that are all added to your stack trace just amplifying the noise you have to ignore when looking for the module/file that you own and have control over and that caused the problem (let's assume) because `data` had some bad data!
 
 *Takes deep breath.*
 
-Soooo. This example is probably far too contrived to follow and it's significantly abstract (no concrete real world libs or common uses presented as of yet), so you're probably lost and wondering if this has ever happened to you or ever will. Maybe, maybe not.
+Soooo. This example is probably far too contrived to follow and it's significantly abstract (no concrete real world libs or common uses effectively presented as of yet, only briefly mentioned), so you're probably lost and wondering if this has ever happened to you or ever will. Maybe, maybe not.
 
 But there's an easy fix to the problem.
+
+> Create "trivial" functions that wrap the functions of the other modules/files you really care about just to get more context in the stack trace.
 
 ```javascript
 b.fetch(data)
   .then((response) => c.filterAndSortItems(response));
 ```
 
-Just add in a nice little "trivial" function in there. That's it. All that does is add another place in the stack trace where a function is called from Module A (i.e. your module) so that when Module C's (i.e. a third party lib or separate file) function fails, you know what file to look in for potential problems.
+That's it. All that does is add another place in the stack trace where a function is called from Module A (i.e. your module) so that when Module C's (i.e. a third party lib or separate file) function fails, you know what file to look in for potential problems.
 
 Is it uglier? Yes.
 
@@ -58,4 +60,4 @@ Are there significant problems or gotchas with this? Not that I know of.
 
 Can it be improved further? Perhaps. If you don't like anonymous functions, you could used a named function declaration (e.g. function doFilterAndSortItems() {...}).
 
-Are there other ways to avoid this problem of "hard to read stack traces"? Probably are. In fact there may be something else I'm missing that might help and be a better solution! Let me know in the comments pretty please!
+Are there other ways to avoid this problem of "hard to read stack traces"? Probably are. In fact there may be something else I'm missing that might help and be a better solution! Let me know in the comments *pretty* please!
