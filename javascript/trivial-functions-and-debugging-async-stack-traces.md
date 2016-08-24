@@ -4,7 +4,7 @@ Why?
 
 Because the other modules/files are where the problem becomes manifest, but the stack trace will not necessarily clearly show you in what context (file, page, module) the problem occurred, especially when you're dealing with asynchronous functionality or libraries that wrap your code (e.g. frameworks with nasty digest cycles like AngularJS, analytics tools like [New Relic](https://newrelic.com/), error tracking tools like [Sentry](https://getsentry.com/welcome/), etc.)
 
-So what's one way to fix this? You create "trivial" functions that that wrap the functions of the other modules/files you really care about just to get more context in the stack trace.
+So what's one way to fix this? You create "trivial" functions that wrap the functions of the other modules/files you really care about just to get more context in the stack trace.
 
 For example, let's say Module A represents a component that manages your view (e.g. an AngularJS controller). Module A imports Module B and Module C. Module B is a 3rd-party data service library with at least one asynchronous HTTP and promise based request function called `fetch`. Module C is a 3rd-party utility library.
 
