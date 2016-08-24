@@ -10,7 +10,7 @@ Create "trivial" functions that wrap the functions of the other modules/files yo
 
 For a contrived, abstract example that probably won't clarify anything...
 
-Let's say Module A represents a component that manages your view (e.g. an AngularJS controller). Module A imports Module B and Module C. Module B is a 3rd-party data service library with at least one asynchronous HTTP and promise based request function called `fetch`. Module C is a 3rd-party utility library.
+Let's say Module A represents a component that manages your view (e.g. an AngularJS controller). Module A imports Module B and Module C. Module B is a 3rd-party data service library with at least one asynchronous web request function that's promise based called `fetch`. Module C is a 3rd-party utility library with all sorts of fancy _pure_ functions (Yay! No side effects! FTW!).
 
 ```javascript
 // Module A
