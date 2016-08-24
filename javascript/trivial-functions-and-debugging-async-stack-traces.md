@@ -50,7 +50,7 @@ Is it uglier? Yes.
 
 Is it less succinct? Yes.
 
-Does it feel redundanct? Yes.
+Does it feel redundant? Yes.
 
 Will it affect performance *gasp*? Maybe. Will that matter? Do I dare say...probably not? Depends on your scenario.
 
