@@ -1,3 +1,21 @@
+*tldr;*
+
+For more helpful async stack traces, code this:
+
+```javascript
+b.fetch(data)
+  .then((response) => c.filterAndSortItems(response));
+```
+
+Not this:
+
+```javascript
+b.fetch(data)
+  .then(c.filterAndSortItems);
+```
+
+---
+
 It can be _very_ difficult to debug an issue when a given module/file whose context can help you understand the source of the issue is using functions from other modules/files but no functions of its own. 
 
 Why? 
