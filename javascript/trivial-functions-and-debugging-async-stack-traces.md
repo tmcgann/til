@@ -25,7 +25,7 @@ b.fetch(data)
   .then(c.filterAndSortItems);
 ```
 
-Now let's say that `c.filterAndSortItems` throws an error: `Cannot read property 'name' of undefined`. Well, assuming `filterAndSortItems` is a single, pure function, that error will be caught or thrown by Module B since Module B is the caller of Module C's function `filterAndSortItems`. And this is where it gets tricky and interesting.
+Now let's say that `c.filterAndSortItems` throws an error: `Cannot read property 'name' of undefined`. Well, assuming `filterAndSortItems` is a single, pure function, that error will be caught or thrown by Module B since Module B's `then` is the caller of Module C's `filterAndSortItems`. And this is where it gets tricky and interesting.
 
 At this point your call stack is asynchronous Module B's `fetch` function makes an asynchronous web request. So chances are your browser dev tools will pick up the stack trace where the response is received and if you have other libraries wrapping your code, it can be very difficult to see what module/file called `b.fetch` in the first place. 
 
