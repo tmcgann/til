@@ -9,6 +9,7 @@ Today I Learned
  
 ## JavaScript
 - [Return Object Literal from Constructor](javascript/return-object-literal-from-constructor.md)
+- [Trivial Functions and Debugging Async Stack Traces](javascript/trivial-functions-and-debugging-async-stack-traces.md)
 
 ## MySQL
 - [Seed/Dump MySQL Database from/to File](mysql/seed-mysql-database-from-file.md)
