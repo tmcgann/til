@@ -1,4 +1,8 @@
-It can be _very_ difficult to debug an issue when a given module/file whose context can help you understand the source of the issue is using functions from other modules/files but no functions of its own. Why? Because the other modules/files are where the problem becomes manifest, but the stack trace will not necessarily clearly show you in what context (file, page, module) the problem occurred, especially when you're dealing with asynchronous functionality or libraries that wrap your code (e.g. frameworks with nasty digest cycles like AngularJS, analytics tools like [New Relic](https://newrelic.com/), error tracking tools like [Sentry](https://getsentry.com/welcome/), etc.)
+It can be _very_ difficult to debug an issue when a given module/file whose context can help you understand the source of the issue is using functions from other modules/files but no functions of its own. 
+
+Why? 
+
+Because the other modules/files are where the problem becomes manifest, but the stack trace will not necessarily clearly show you in what context (file, page, module) the problem occurred, especially when you're dealing with asynchronous functionality or libraries that wrap your code (e.g. frameworks with nasty digest cycles like AngularJS, analytics tools like [New Relic](https://newrelic.com/), error tracking tools like [Sentry](https://getsentry.com/welcome/), etc.)
 
 So how do you fix this? You create "trivial" functions that that wrap the functions of the other modules/files you really care about just to get more context in the stack trace.
 
