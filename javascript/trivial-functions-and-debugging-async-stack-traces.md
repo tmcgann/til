@@ -72,7 +72,7 @@ _Is it less succinct?_ Yes.
 
 _Does it feel redundant?_ Yes.
 
-_Will it affect performance *gasp*? Maybe. Will that matter?_ Do I dare say...probably not? Depends on your scenario.
+_Will it affect performance \*gasp\*? Maybe. Will that matter?_ Do I dare say...probably not? Depends on your scenario.
 
 _Has this helped me have async stack traces that are oodles more helpful?_ Yes, yes, a thousand times yes!
 
