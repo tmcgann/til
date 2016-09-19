@@ -55,11 +55,11 @@ console.log(Object.keys(o));
 
 ---
 
-> Does this mean that index properties does not affect an objects hidden class? I.e. I can add all the index properties I want to an object created by a class constructor without it affecting the objects hidden class and still get fast lookup for it's non-index keys?" [3]
+> Does this mean that index properties does not affect an objects hidden class? I.e. I can add all the index properties I want to an object created by a class constructor without it affecting the objects hidden class and still get fast lookup for it's non-index keys? [3]
 
 ---
 
-> ...indexed properties are tracked completely separately in V8 and most likely in other implementations too." [4]
+> ...indexed properties are tracked completely separately in V8 and most likely in other implementations too. [4]
 
 ---
 
