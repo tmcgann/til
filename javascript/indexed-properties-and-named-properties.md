@@ -1,6 +1,6 @@
 # Overview
 
-Was reading this JS perf post today and stumbled upon some insightful comments related to how indexed and named properties work in JavaScript, at least in the V8 engine.
+Was reading this JS perf post entitled [Three JavaScript Performance Fundamentals that make Bluebird Fast](https://reaktor.com/blog/javascript-performance-fundamentals-make-bluebird-fast/) and stumbled upon some insightful comments related to how indexed and named properties work in JavaScript, at least in the V8 engine.
 
 # Original Transcript
 
