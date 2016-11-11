@@ -2,10 +2,14 @@
 Today I Learned
 
 ## Categories
+- [Git](#git)
 - [JavaScript](#javascript)
-- [MySql](#MySQL)
+- [MySql](#mysql)
 - [Node](#node)
 - [Python](#python)
+
+## Git
+- [Move Changes to an Existing Branch](git/rebase-changes-to-existing-branch.md)
  
 ## JavaScript
 - [Indexed Properties and Named Properties](javascript/indexed-properties-and-named-properties.md)
