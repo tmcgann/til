@@ -40,19 +40,3 @@ function getDirectories(path, cb) {
     });
 }
 ```
-Sync version:
-
-```js
-const glob = require('glob');
-
-function getDirectories(path) {
-    glob(path, function (err, files) {
-        if (err) throw err;
-        const directories = Array.from(
-            files.map(f => f.substr(0, f.lastIndexOf('/')))
-                .reduce((accum, f) => accum.add(f), new Set())
-        );
-        return directories;
-    });
-}
-```
