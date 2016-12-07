@@ -1,3 +1,6 @@
+To get all the directires for a glob pattern of files:
+
+```js
 const glob = require('glob');
 
 glob('src/**/*.test.js', function (err, files) {
@@ -12,3 +15,4 @@ glob('src/**/*.test.js', function (err, files) {
     );
     console.log(directories);
 });
+```
