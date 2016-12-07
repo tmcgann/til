@@ -1,4 +1,4 @@
-To get all the directires for a glob pattern of files:
+To get a list of all the directires for a glob pattern of files:
 
 ```js
 const glob = require('glob');
