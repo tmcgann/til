@@ -20,6 +20,7 @@ Today I Learned
 - [Seed/Dump MySQL Database from/to File](mysql/seed-mysql-database-from-file.md)
 
 ## Node
+- [List Directories](node/list-directories.md)
 - [List Global NPM Packages](node/list-global-npm-packages.md)
 - [Kill Node Server](node/kill-node-server.md)
 
