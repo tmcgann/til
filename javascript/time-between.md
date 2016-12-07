@@ -12,24 +12,31 @@ function getDiffInMilliseconds(earlier, later) {
 }
 
 function humanize(ms) {
-    const durationFunctionName = getDurationFunctionName(ms);
-    const duration = moment.duration(ms)[durationFunctionName]();
-    const units = durationFunctionName.substr(2).toLowerCase();
-    return `${Math.floor(duration)} ${units}`;
+    const duration = getDuration(ms);
+    return `${Math.floor(duration.value)} ${duration.units}`;
 }
 
-function getDurationFunctionName(ms) {
+function getDuration(ms) {
     const MS_ONE_MINUTE = 60000;
     const MS_ONE_HOUR = MS_ONE_MINUTE * 60;
     const MS_ONE_DAY = MS_ONE_HOUR * 24;
     
     if (ms < MS_ONE_HOUR) {
-        return 'asMinutes';
+        return {
+            value: (ms / MS_ONE_MINUTE),
+            units: 'minutes',
+        };
     }
     if (ms < MS_ONE_DAY) {
-        return 'asHours';
+        return {
+            value: (ms / MS_ONE_HOUR),
+            units: 'hours',
+        };
     }
-    return 'asDays';
+    return {
+        value: (ms / MS_ONE_DAY),
+        units: 'days',
+    };
 }
 ```
 
