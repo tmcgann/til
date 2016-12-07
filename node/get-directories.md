@@ -16,3 +16,43 @@ glob('src/**/*.test.js', function (err, files) {
     console.log(directories);
 });
 ```
+If you want it as a (async) function instead of a script:
+
+```js
+const glob = require('glob');
+
+function getDirectories(path, cb) {
+    glob(path, function (err, files) {
+        if (err) {
+            cb(err);
+            return;
+        }
+        
+        try {
+            const directories = Array.from(
+                files.map(f => f.substr(0, f.lastIndexOf('/')))
+                    .reduce((accum, f) => accum.add(f), new Set())
+            );
+            cb(null, directories);
+        } catch (e) {
+            cb(e);
+        }
+    });
+}
+```
+Sync version:
+
+```js
+const glob = require('glob');
+
+function getDirectories(path) {
+    glob(path, function (err, files) {
+        if (err) throw err;
+        const directories = Array.from(
+            files.map(f => f.substr(0, f.lastIndexOf('/')))
+                .reduce((accum, f) => accum.add(f), new Set())
+        );
+        return directories;
+    });
+}
+```
