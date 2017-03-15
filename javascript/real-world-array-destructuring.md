@@ -24,9 +24,9 @@ WITHOUT desctructuring, we might do something like this:
 ```js
 Promise.all(promises)
   .then(values => {
-    console.log(values[0])
-    console.log(values[1])
-    console.log(values[2])
+    console.log(values[0]) // foo
+    console.log(values[1]) // bar
+    console.log(values[2]) // baz
   }, err => {
     console.error(err)
   })
