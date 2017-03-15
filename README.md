@@ -14,6 +14,7 @@ Today I Learned
 ## JavaScript
 - [Indexed Properties and Named Properties](javascript/indexed-properties-and-named-properties.md)
 - [Partially Applied Functions (or Function Wrappers)](javascript/partially-applied-functions.md)
+- [Real World Array Destructuring](javascript/real-world-array-destructuring.md)
 - [Return Object Literal from Constructor](javascript/return-object-literal-from-constructor.md)
 - [Time Between Two Dates](javascript/time-between.md)
 - [Trivial Functions and Debugging Async Stack Traces](javascript/trivial-functions-and-debugging-async-stack-traces.md)
