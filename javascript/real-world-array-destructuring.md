@@ -11,6 +11,7 @@ One of the best real world use cases for destructuring arrays is when using `Pro
 Let's say we have a number of async data requests that return promises, we want to execute all of them in parallel, and we want to wait for all of them to resolve before continuing.
 
 ```js
+// For simplicity, let's NOT fetch real data and instead return some resolved promises :)
 const promises = [
   Promise.resolve('foo'),
   Promise.resolve('bar'),
