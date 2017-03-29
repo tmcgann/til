@@ -2,11 +2,15 @@
 Today I Learned
 
 ## Categories
+- [CLI](#CLI)
 - [Git](#git)
 - [JavaScript](#javascript)
 - [MySql](#mysql)
 - [Node](#node)
 - [Python](#python)
+
+## CLI
+- [Generate SSH Keys](CLI/generate-ssh-keys.md)
 
 ## Git
 - [Move Changes to an Existing Branch](git/rebase-changes-to-existing-branch.md)
