@@ -1,4 +1,4 @@
-I had to generate an SSH key for the _x_th time so I thought I'd document the basic command for future reference.
+I had to generate an SSH key for the _xth_ time so I thought I'd document the basic command for future reference.
 
 ```
 ssh-keygen -d rsa -b 4096 <keyname>
