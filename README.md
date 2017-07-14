@@ -16,6 +16,7 @@ Today I Learned
 - [Move Changes to an Existing Branch](git/rebase-changes-to-existing-branch.md)
  
 ## JavaScript
+- [Emoji in JavaScript using Unicode](javascript/emoji-in-javascript.md)
 - [Indexed Properties and Named Properties](javascript/indexed-properties-and-named-properties.md)
 - [Partially Applied Functions (or Function Wrappers)](javascript/partially-applied-functions.md)
 - [Real World Array Destructuring](javascript/real-world-array-destructuring.md)
