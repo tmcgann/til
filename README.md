@@ -10,6 +10,7 @@ Today I Learned
 - [Python](#python)
 
 ## CLI
+- [Add SSH Key to Agent](CLI/add-ssh-key-to-agent.md)
 - [Generate SSH Keys](CLI/generate-ssh-keys.md)
 
 ## Git
