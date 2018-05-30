@@ -26,6 +26,9 @@ Today I Learned
 - [Time Between Two Dates](javascript/time-between.md)
 - [Trivial Functions and Debugging Async Stack Traces](javascript/trivial-functions-and-debugging-async-stack-traces.md)
 
+## Misc
+- [Programming Time](misc/programming-time.md)
+
 ## MySQL
 - [Seed/Dump MySQL Database from/to File](mysql/seed-mysql-database-from-file.md)
 
