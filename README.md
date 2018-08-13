@@ -31,6 +31,7 @@ Today I Learned
 
 ## MySQL
 - [Seed/Dump MySQL Database from/to File](mysql/seed-mysql-database-from-file.md)
+- [Set Default Timezone](mysql/set-default-timezone.md)
 
 ## Node
 - [List Directories](node/list-directories.md)
