@@ -8,6 +8,6 @@ $ ssh-keygen -lf ~/.ssh/id_rsa.pub
 If you want the old school md5 hash:
 
 ```bash
-ssh-keygen -E md5 -lf ~/.ssh/id_rsa.pub
+$ ssh-keygen -E md5 -lf ~/.ssh/id_rsa.pub
 4096 MD5:11:22:33:44:55:66:77:88:99:00:aa:bb:cc:dd:ee:ff taylor@example.com (RSA)
 ```
