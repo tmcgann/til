@@ -12,6 +12,7 @@ Today I Learned
 ## CLI
 - [Add SSH Key to Agent](CLI/add-ssh-key-to-agent.md)
 - [Generate SSH Keys](CLI/generate-ssh-keys.md)
+- [Print SSH Key Fingerprint](CLI/print-ssh-key-fingerprint.md)
 
 ## Git
 - [Move Changes to an Existing Branch](git/rebase-changes-to-existing-branch.md)
