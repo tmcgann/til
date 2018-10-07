@@ -1,5 +1,3 @@
-# Print SSH Key Fingerprint
-
 To print the fingerprint of an SSH key:
 
 ```bash
