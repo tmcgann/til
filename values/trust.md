@@ -4,9 +4,11 @@
 
 > The reason why people have to be told to take time off when they have unlimited vacation time, or go home early if they’re finished at 2pm, or not to answer emails after midnight is because they have innate understanding that being observed working is more valuable than the results of their work. —[Marianne Bellotti, "All the Best Engineering Advice I Stole from Non-technical People"](https://medium.com/@bellmar/all-the-best-engineering-advice-i-stole-from-non-technical-people-eb7f90ca2f5f)
 
-It seems as though this should depend on what the observer values. For example, some work place cultures disincentivize people from speaking up about failure while others incentivize it. Those that disincentivize it do so by punishing and even firing employees that make mistakes. Those that incentivize it seek understanding and look for ways to improve processes rather than change people. When an employer values observing failure they incentivize transparency and observability of failure.
+It seems as though this should depend on what the observer values.
 
-Likewise, when an employer values results over visible workers (i.e. "butts in chairs"), the incentivize it by prioritizing the observability of results as opposed to the observability of people (seemingly) working.
+For example, some work place cultures disincentivize people from speaking up about failure while others incentivize it. Those that disincentivize it do so by punishing and even firing employees that make mistakes. Those that incentivize it seek understanding and look for ways to improve processes rather than change people. When an employer values observing failure they incentivize transparency and observability of failure.
+
+Likewise, when an employer values results over visible workers (i.e. "butts in chairs"), they incentivize it by prioritizing the observability of results as opposed to the observability of people (seemingly) working. One way to do this with software engineers is to have them demo their deliverables regularly. This gives them an opportunity for others within the company to observe results. Engineers should be encouraged to demo regularly AND tie their results to company impact so that others can observe their results and internalize the impact of their deliverables. Really, this kind of observability can be applied to any worker.
 
 ## Service Recovery Paradox
 
