@@ -8,6 +8,7 @@ Today I Learned
 - [MySql](#mysql)
 - [Node](#node)
 - [Python](#python)
+- [Values](#values)
 
 ## CLI
 - [Add SSH Key to Agent](CLI/add-ssh-key-to-agent.md)
@@ -42,7 +43,10 @@ Today I Learned
 ## Python
 - [Clear Cached Files After Heavy Refactoring](python/clear-cached-files-after-heavy-refactoring.md)
 
+## Values
+- [Trust](values/trust.md)
+
 ## License
-&copy; 2016 Taylor McGann
+&copy; 2016-2019 Taylor McGann
 
 Repo licensed under the MIT license. See `LICENSE` for details.
