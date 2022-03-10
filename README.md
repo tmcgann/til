@@ -21,6 +21,7 @@ Today I Learned
 ## JavaScript
 - [Emoji in JavaScript using Unicode](javascript/emoji-in-javascript.md)
 - [Flatten Arrays](javascript/flatten-arrays.md)
+- [Generate URL-safe Base64 Encoded Random Strings](javascript/generate-url-safe-base64-encoded-random-strings.md)
 - [Indexed Properties and Named Properties](javascript/indexed-properties-and-named-properties.md)
 - [Partially Applied Functions (or Function Wrappers)](javascript/partially-applied-functions.md)
 - [Real World Array Destructuring](javascript/real-world-array-destructuring.md)
